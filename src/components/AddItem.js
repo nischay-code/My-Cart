@@ -14,7 +14,10 @@ class AddItem extends React.Component {
         className="row mb-5"
         onSubmit={(e) => {
           e.preventDefault();
-          this.props.addItem(this.state.productName,Number(this.state.productPrice));
+          this.props.addItem(
+            this.state.productName,
+            Number(this.state.productPrice)
+          );
         }}
       >
         <div className="mb-3 col-4">
