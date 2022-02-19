@@ -17,19 +17,19 @@ export default function Product(props) {
         >
           <button
             type="button"
-            class="btn btn-danger"
+            class="btn btn-light"
             onClick={() => {
               props.decrementQuantity(props.index);
             }}
           >
             -
           </button>
-          <button type="button" class="btn btn-warning">
+          <button type="button" class="btn btn-primary">
             {props.product.quantity}
           </button>
           <button
             type="button"
-            class="btn btn-success"
+            class="btn btn-light"
             onClick={() => {
               props.incrementQuantity(props.index);
             }}
@@ -42,7 +42,7 @@ export default function Product(props) {
         {props.product.quantity * props.product.price}
       </div>
       <button
-        className="col-2 btn btn-danger"
+        className="col-2 btn btn-light"
         onClick={() => {
           props.removeItem(props.index);
         }}
