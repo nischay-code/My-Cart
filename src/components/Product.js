@@ -5,7 +5,7 @@ export default function Product(props) {
     <div className="row mt-3">
       <div className="col-5">
         <h2>
-          {props.product.name}
+          {props.product.name} 
           <span className="badge bg-secondary">₹{props.product.price}</span>
         </h2>
       </div>
@@ -17,19 +17,19 @@ export default function Product(props) {
         >
           <button
             type="button"
-            className="btn btn-light"
+            className="btn btn-primary"
             onClick={() => {
               props.decrementQuantity(props.index);
             }}
           >
-            -
+            - 
           </button>
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-light">
             {props.product.quantity}
           </button>
           <button
             type="button"
-            className="btn btn-light"
+            className="btn btn-primary"
             onClick={() => {
               props.incrementQuantity(props.index);
             }}
