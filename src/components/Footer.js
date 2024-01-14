@@ -2,19 +2,22 @@ import React from "react";
 
 export default function Footer(props) {
   return (
-    <div className="row fixed-bottom">
+    <div class="btn-group fixed-bottom" role="group" aria-label="Basic example">
       <button
-        className="btn btn-primary col-2"
+        type="button"
+        class="btn btn-primary"
         onClick={() => {
           props.resetQuantity();
         }}
       >
         Reset
       </button>
-      <div className="col-8 bg-light text-dark text-center">
+      <button type="button" class="btn btn-light">
         {props.totalAmount}
-      </div>
-      <button className="btn btn-primary col-2">Pay Now</button>
+      </button>
+      <button type="button" class="btn btn-primary">
+        Pay Now
+      </button>
     </div>
   );
 }
