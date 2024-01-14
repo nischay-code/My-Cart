@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList.js";
 import Footer from "./components/Footer.js";
@@ -46,6 +45,7 @@ function App() {
     let newProductList = [...productList];
     newProductList.map((products) => {
       products.quantity = 0;
+      return 0;
     });
     setProductList(newProductList);
     setTotalAmount(0);
