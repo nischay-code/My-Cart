@@ -4,11 +4,11 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        class="navbar bg-dark border-bottom border-body"
+        className="navbar bg-primary border-bottom border-body"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand fs-2" href="/">
             Bunny Cart
           </a>
           <button

@@ -76,6 +76,7 @@ function App() {
       <Navbar />
       <main className="container mt-5">
         <AddItem addItem={addItem} />
+        <h3 className="mb-4">🧾Cart Items</h3>
         <ProductList
           productList={productList}
           incrementQuantity={incrementQuantity}
